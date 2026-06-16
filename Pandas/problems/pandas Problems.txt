@@ -1,0 +1,170 @@
+pandas Problems
+
+Level 1: Pandas Basics
+1. Create a DataFrame
+Ye dictionary di hui hai:
+data = {
+    "Name": ["Amit", "Priya", "Rahul"],
+    "Age": [25, 28, 30],
+    "Salary": [50000, 60000, 70000]
+}
+DataFrame banao.
+
+2. Display Information
+Upar wale DataFrame ke liye:
+First 2 rows
+Last row
+Column names
+Shape
+nikalo.
+
+3. Select Columns
+Print:
+Name
+Salary
+columns.
+
+4. Select Single Row
+Rahul wali row nikalo using:
+loc
+iloc
+
+5. Add New Column
+Ek new column banao:
+Bonus = Salary * 0.10
+
+6. Rename Column
+Salary
+ko
+Monthly_Salary
+rename karo.
+
+7. Delete Column
+Bonus column hatao.
+
+Level 2: Filtering
+
+8. Salary Greater Than 60000
+Sirf un employees ko dikhao jinki salary 60000 se zyada hai.
+
+9. Multiple Conditions
+Age > 25 AND Salary > 55000
+wale employees dikhao.
+
+10. String Filtering
+Sirf un logon ko dikhao jinke naam me letter:
+"a"
+
+aata ho.
+
+11. Top Earners
+
+Highest salary wale employee ko nikalo.
+
+Level 3: Sorting
+12. Sort by Salary
+Salary ascending order me.
+
+13. Sort by Age
+Age descending order me.
+
+14. Multiple Column Sorting
+Age ascending aur Salary descending.
+
+Level 4: Missing Values
+
+Dataset:
+data = {
+    "Name": ["Amit", "Priya", "Rahul", "Neha"],
+    "Salary": [50000, None, 70000, None],
+    "Age": [25, 28, None, 24]
+}
+Problems
+Count missing values.
+Missing Salary ko mean se fill karo.
+Missing Age ko median se fill karo.
+Rows remove karo jahan Salary missing hai.
+Sirf missing values wali rows dikhao.
+Level 5: GroupBy
+
+Dataset:
+data = {
+    "Department": ["IT","HR","IT","Finance","HR","Finance"],
+    "Salary": [50000,45000,70000,65000,48000,72000]
+}
+Problems
+Department-wise average salary.
+Department-wise maximum salary.
+Department-wise employee count.
+Kis department ki average salary highest hai?
+
+Level 6: Data Cleaning
+
+Dataset:
+Name
+Amit
+amit
+AMIT
+Priya
+PRIYA
+Problems
+Sab names uppercase me convert karo.
+Sab names lowercase me convert karo.
+Duplicate names remove karo.
+Unique names count karo.
+
+Level 7: CSV Practice
+
+28.
+CSV file load karo.
+df = pd.read_csv("employees.csv")
+head()
+tail()
+info()
+describe()
+run karo.
+
+29.
+CSV me:
+Missing values count
+Duplicate rows count
+Highest salary
+Lowest salary
+
+nikalo.
+
+30.
+CSV ko clean karke save karo.
+
+cleaned_data.csv
+Level 8: Interview Style Problems
+
+31.
+Second highest salary find karo.
+
+32.
+Third highest salary find karo.
+
+33.
+Employees jinki salary average salary se zyada hai.
+
+34.
+Most common city find karo.
+
+35.
+Har city me kitne employees hain.
+
+36.
+Top 3 highest paid employees.
+
+37.
+Salary aur Age ka correlation nikalo.
+
+38.
+Department-wise total salary expenditure.
+
+39.
+Employee with maximum age.
+
+40.
+Employee with minimum age.
